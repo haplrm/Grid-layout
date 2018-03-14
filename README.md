@@ -14,11 +14,7 @@ Before diving into the concepts of Grid it's important to understand the termino
 #Grid Container
 The element on which display: grid is applied. It's the direct parent of all the grid items. In this example container is the grid container.
 
-<div class="container">
-  <div class="item item-1"></div>
-  <div class="item item-2"></div>
-  <div class="item item-3"></div>
-</div>
+
 #Grid Item
 The children (e.g. direct descendants) of the grid container. Here the item elements are grid items, but sub-item isn't.
 
