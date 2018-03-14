@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Columns Size</title>
+</head>
+<body>
+
+  <style>
+    body {
+      font-family: Arial;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(4,1fr);
+      /*grid-template: filas / columnas ;*/
+      /*grid-template: 300px 100px 100px / repeat(4, 1fr);*/
+      /*grid-template: 300px 100px 100px / repeat(4, minmax(200px, 1fr));*/
+      /*grid-gap: rows columns*/
+      grid-gap: 25px;
+      height: 100vh;
+    }
+
+    .item {
+      background: #F44336;
+      padding: 10px;
+      border: 5px solid black;
+      justify-content: center;
+      color: white;
+      align-items: center;
+    }
+
+    .item:nth-of-type(1){
+      background: #42A5F5;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .item:nth-of-type(8){
+      background: #42A5F5;
+      grid-column: 1 / -1;
+    }
+
+    .item:nth-of-type(7){
+      background: #42A5F5;
+      grid-column: 2 / 4;
+    }
+
+  </style>
+
+  <section class="container">
+    <div class="item">item #1</div>
+    <div class="item">item #2</div>
+    <div class="item">item #3</div>
+    <div class="item">item #4</div>
+    <div class="item">item #5</div>
+    <div class="item">item #6</div>
+    <div class="item">item #7</div>
+    <div class="item">item #8</div>
+    <div class="item">item #9</div>
+    <div class="item">item #10</div>
+    <div class="item">item #11</div>
+    <div class="item">item #12</div>
+  </section>
+
+</body>
+</html>

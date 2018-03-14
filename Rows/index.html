@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rows</title>
+	<link href="https://fonts.googleapis.com/css?family=Mukta+Malar" rel="stylesheet">
+</head>
+<body>
+	<style type="text/css">
+		*{
+			font-family: 'Mukta Malar', sans-serif;
+		}
+		.container{
+			display: grid;
+		  /*grid-template-columns: 25% 200px 25%;*/
+	      /*grid-template-rows: 300px 150px;*/
+	      /*grid-template: filas / columnas ;*/
+	      grid-template: 300px 100px 100px / 50% 200px 100px;
+		}
+
+		.item{
+			background: #E91E63;
+			border:1px solid black;
+		}
+
+		.item:nth-of-type(5){
+			background: #F44336;
+			overflow: auto;
+			display: grid;
+			grid-template: 50px 50px 50px / 200px 200px 200px;
+		}
+
+		.item .item {
+           background: yellow;
+    }
+	</style>
+
+	<section class="container">
+		<div class="item">Content #1</div>
+		<div class="item">Content #2</div>
+		<div class="item">Content #3</div>
+		<div class="item">Content #4</div>
+		<div class="item">
+			<div class="item">Sub clase #1</div>
+			<div class="item">Sub clase #2</div>
+			<div class="item">Sub clase #3</div>
+			<div class="item">Sub clase #4</div>
+			<div class="item">Sub clase #5</div>
+			<div class="item">Sub clase #6</div>
+		</div>
+		<div class="item">Content #6</div>
+		<div class="item">Content #7</div>
+		<div class="item">Content #8</div>
+		<div class="item">Content #9</div>
+		<div class="item">Content #10</div>
+		<div class="item">Content #11</div>
+		<div class="item">Content #12</div>
+	</section>
+</body>
+</html>
